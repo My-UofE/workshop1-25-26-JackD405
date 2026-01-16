@@ -23,9 +23,13 @@ def process_guess(letter, board, word):
         if letter == word[i]:
             print("Well done! '",letter, "' is in the word")
             board[i] = letter
-            return True
+            temp = 1
         
     print("Sorry,'", letter, "'is not in the word")
-    return False
+    if temp == 1:
+        return True
+    else:
+        return False
+
 
 
